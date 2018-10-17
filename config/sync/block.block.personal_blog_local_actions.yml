@@ -1,0 +1,20 @@
+uuid: 7364a525-5436-42fa-81e5-43536220ae9f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - personal_blog
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: personal_blog_local_actions
+theme: personal_blog
+region: primary_menu
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

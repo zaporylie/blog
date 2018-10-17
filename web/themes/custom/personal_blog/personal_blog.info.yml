@@ -1,0 +1,19 @@
+name: Personal Blog
+type: theme
+base theme: classy
+description: Very simple and clean blog theme.
+package: Custom
+core: 8.x
+logo: logo.jpg
+libraries:
+  - personal_blog/fonts
+  - personal_blog/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  featured: 'Featured'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  footer: 'Footer'

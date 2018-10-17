@@ -1,0 +1,7 @@
+# This is example crontab file. Adjust it to your need and rebuild && restart cron service.
+#
+# $ docker-compose build cron
+# $ docker-compose restart cron
+#
+# That's it. By default cron will be run every ten minutes (so 0,10,20,30,40,50)
+0,10,20,30,40,50 * * * * drush --root=/var/www/html/web cron >> /var/log/cron.log 2>&1

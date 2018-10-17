@@ -1,0 +1,31 @@
+uuid: 2a4d77d3-f6b2-4559-921c-b53b88851ac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.quick
+    - field.field.node.microblog.body
+    - node.type.microblog
+  module:
+    - text
+id: node.microblog.quick
+targetEntityType: node
+bundle: microblog
+mode: quick
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

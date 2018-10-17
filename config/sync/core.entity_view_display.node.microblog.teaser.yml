@@ -1,0 +1,25 @@
+uuid: 424651df-4aa7-4caa-8300-dcd53da527a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.microblog.body
+    - node.type.microblog
+  module:
+    - text
+    - user
+id: node.microblog.teaser
+targetEntityType: node
+bundle: microblog
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

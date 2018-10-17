@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+}
+
+.layout-container {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  color: #93a58a;
+  font-size: 2.4em;
+}
+
+.block-system-branding-block .site-logo img {
+  width: 8em;
+  height: 8em;
+  border-radius: 8em;
+  border-width: .5em;
+  border-style: solid;
+  color: #93a58a;
+}
+.block-system-branding-block .site-name {
+  font-size: 2.4em;
+}
+.block-system-branding-block .site-slogan {
+  color: #999999;
+}

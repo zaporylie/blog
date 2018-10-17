@@ -1,0 +1,11 @@
+uuid: 7b5e630a-7a6e-44ae-9d96-5a25bd223054
+langcode: en
+status: true
+dependencies: {  }
+name: Microblog
+type: microblog
+description: 'Short notes, twitter style'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

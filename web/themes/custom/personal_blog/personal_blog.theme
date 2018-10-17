@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Personal Blog theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function personal_blog_preprocess_html(&$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function personal_blog_preprocess_page(&$variables) {
+
+}
+
+function personal_blog_preprocess_page_title(&$variables) {
+  // Load the node entity from current route
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    // Set the page title
+    $variables['title'] = new \Drupal\Component\Render\FormattableMarkup('#@nid', ['@nid' => $node->id()]);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function personal_blog_preprocess_node(&$variables) {
+
+}

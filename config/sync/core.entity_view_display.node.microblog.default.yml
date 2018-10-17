@@ -1,0 +1,28 @@
+uuid: 92930439-c7b9-4fcd-bdd2-7bdf74594f26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.microblog.body
+    - node.type.microblog
+  module:
+    - text
+    - user
+id: node.microblog.default
+targetEntityType: node
+bundle: microblog
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

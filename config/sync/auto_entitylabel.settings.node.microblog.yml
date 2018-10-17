@@ -1,0 +1,7 @@
+status: '2'
+pattern: '[node:body]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - node.type.microblog

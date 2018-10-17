@@ -1,0 +1,10 @@
+uuid: fa66d2d2-7c87-4c23-a1ab-cfcf109cb9f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.quick
+label: quick
+targetEntityType: node
+cache: true

@@ -1,0 +1,14 @@
+uuid: 014b8844-550e-42bb-a218-1ce68b796150
+name: 'Jakub Piasecki'
+mail: jakub@piaseccy.pl
+slogan: 'developer, maker, traveller'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

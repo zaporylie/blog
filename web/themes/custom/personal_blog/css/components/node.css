@@ -1,0 +1,13 @@
+article {
+  line-height: 1.6em;
+}
+
+article h2 .field--name-title {
+  color: #999999;
+  text-decoration: none;
+}
+
+article .node__meta {
+  font-size: .8em;
+  color: #93a58a;
+}

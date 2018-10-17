@@ -1,0 +1,25 @@
+uuid: 2ca52a6c-e064-420b-9e44-f0eb3be8291a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - personal_blog
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: personal_blog_branding
+theme: personal_blog
+region: header
+weight: -2
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

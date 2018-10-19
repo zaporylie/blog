@@ -76,6 +76,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "violinist": {
+            "blacklist": [],
+            "allow_updates_beyond_constraint": 0,
+            "update_with_dependencies": 1
         }
     }
 }

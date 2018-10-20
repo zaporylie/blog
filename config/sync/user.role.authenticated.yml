@@ -10,4 +10,9 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'access content overview'
+  - 'create microblog content'
+  - 'delete own microblog content'
+  - 'edit own microblog content'
   - 'view media'
+  - 'view microblog revisions'

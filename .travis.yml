@@ -23,6 +23,7 @@ before_install:
   - composer --verbose self-update --$COMPOSER_CHANNEL
   - composer --version
   - printenv
+  - git checkout TRAVIS_BRANCH
 
 install:
   - composer --verbose validate
@@ -32,3 +33,9 @@ script:
   - cd $TRAVIS_BUILD_DIR/web
   - ./../vendor/bin/drush -y sql-create
   - ./../vendor/bin/drush -y site-install --existing-config
+  - git checkout -
+  - composer install
+  - ./../vendor/bin/drush cr
+  - ./../vendor/bin/drush -y updb
+  - ./../vendor/bin/drush -y cex
+  - git diff ../config

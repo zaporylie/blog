@@ -23,7 +23,7 @@ before_install:
   - composer --verbose self-update --$COMPOSER_CHANNEL
   - composer --version
   - printenv
-  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then git fetch --all && git checkout $TRAVIS_BRANCH; fi
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* && git fetch && git checkout $TRAVIS_BRANCH; fi
 
 install:
   - composer --verbose validate

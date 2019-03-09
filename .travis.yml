@@ -23,19 +23,18 @@ before_install:
   - composer --verbose self-update --$COMPOSER_CHANNEL
   - composer --version
   - printenv
-  - git checkout $TRAVIS_BRANCH
+  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then git checkout $TRAVIS_BRANCH; fi
 
 install:
   - composer --verbose validate
   - composer --verbose install
 
 script:
-  - cd $TRAVIS_BUILD_DIR/web
-  - ./../vendor/bin/drush -y sql-create
-  - ./../vendor/bin/drush -y site-install --existing-config
-  - git checkout -
+  - ./vendor/bin/drush -y sql-create
+  - ./vendor/bin/drush -y site-install --existing-config
+  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then git checkout $TRAVIS_PULL_REQUEST_SHA; fi
   - composer install
-  - ./../vendor/bin/drush cr
-  - ./../vendor/bin/drush -y updb
-  - ./../vendor/bin/drush -y cex
-  - git diff ../config
+  - ./vendor/bin/drush cr
+  - ./vendor/bin/drush -y updb
+  - ./vendor/bin/drush -y cex
+  - git diff --exit-code config

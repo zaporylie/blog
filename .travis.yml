@@ -32,7 +32,7 @@ install:
 script:
   - ./vendor/bin/drush -y sql-create
   - ./vendor/bin/drush -y site-install --existing-config
-  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then git checkout -qf FETCH_HEAD; fi
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then chmod -R u+w web/sites/default && git checkout -qf $TRAVIS_PULL_REQUEST_SHA; fi
   - composer install
   - ./vendor/bin/drush cr
   - ./vendor/bin/drush -y updb

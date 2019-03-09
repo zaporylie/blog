@@ -22,7 +22,7 @@
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
-        "drupal/redirect": "1.0.0-alpha2",
+        "drupal/redirect": "^1.0",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",

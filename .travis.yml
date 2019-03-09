@@ -23,7 +23,12 @@ before_install:
   - composer --verbose self-update --$COMPOSER_CHANNEL
   - composer --version
   - printenv
-  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then git checkout $TRAVIS_BRANCH; fi
+  - |
+    if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+    git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+    git fetch
+    git checkout $TRAVIS_BRANCH
+    fi
 
 install:
   - composer --verbose validate
@@ -32,9 +37,13 @@ install:
 script:
   - ./vendor/bin/drush -y sql-create
   - ./vendor/bin/drush -y site-install --existing-config
-  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then git checkout $TRAVIS_PULL_REQUEST_SHA; fi
-  - composer install
-  - ./vendor/bin/drush cr
-  - ./vendor/bin/drush -y updb
-  - ./vendor/bin/drush -y cex
-  - git diff --exit-code config
+  - |
+    if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+    chmod -R u+w web/sites/default
+    git checkout -qf $TRAVIS_PULL_REQUEST_SHA
+    composer install
+    ./vendor/bin/drush cr
+    ./vendor/bin/drush -y updb
+    ./vendor/bin/drush -y cex
+    git diff --exit-code config
+    fi

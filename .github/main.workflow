@@ -12,4 +12,5 @@ action "deploy" {
   needs = ["filter"]
   uses = "digitalocean/action/doctl@master"
   args = ["droplet ssh blog --ssh-command=ls"]
+  secrets = ["DIGITALOCEAN_TOKEN"]
 }

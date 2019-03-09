@@ -23,7 +23,7 @@ before_install:
   - composer --verbose self-update --$COMPOSER_CHANNEL
   - composer --version
   - printenv
-  - git checkout TRAVIS_BRANCH
+  - git checkout $TRAVIS_BRANCH
 
 install:
   - composer --verbose validate

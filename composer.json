@@ -1,12 +1,12 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "zaporylie/blog",
+    "description": "Built based on drupal-composer/drupal-project",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Jakub Piasecki <jakub@piaseccy.pl>",
+            "role": "Creator"
         }
     ],
     "repositories": [
@@ -80,6 +80,9 @@
         "violinist": {
             "blacklist": [],
             "allow_updates_beyond_constraint": 0,
+            "one_pull_request_per_package": 1,
+            "timeframe_disallowed": 0,
+            "timezone": "+0000",
             "update_with_dependencies": 1
         }
     }

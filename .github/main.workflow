@@ -13,9 +13,9 @@ action "deploy" {
   uses = "zaporylie/ssh-deployment@master"
   args = "git pull && composer install && drush cr && drush -y updb && drush cim"
   secrets = [
-    "DIGITALOCEAN_ACCESS_TOKEN",
     "USER",
     "HOST",
     "WORKSPACE",
+    "PRIVATE_DEPLOY_KEY",
   ]
 }

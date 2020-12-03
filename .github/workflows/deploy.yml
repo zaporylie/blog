@@ -1,0 +1,18 @@
+name: Deploy to production
+on:
+  push:
+    branches:
+      - 2.x
+
+jobs:
+  build:
+    name: Build the codebase
+    runs-on: ['self-hosted', 'deploy']
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        run: pwd && whoami
+        env:
+          WORKSPACE: ${{ secrets.WORKSPACE }}
+

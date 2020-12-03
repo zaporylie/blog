@@ -10,9 +10,7 @@ jobs:
     runs-on: ['self-hosted', 'deploy']
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v2
       - name: Deploy
-        run: pwd && whoami
+        run: cd $WORKSPACE && git pull && composer install && drush cr && drush -y updb && drush -y cim
         env:
           WORKSPACE: ${{ secrets.WORKSPACE }}
-

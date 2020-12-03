@@ -20,7 +20,6 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/auto_entitylabel": "^2.1@beta",
-        "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",

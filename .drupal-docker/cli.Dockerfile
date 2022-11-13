@@ -1,4 +1,4 @@
-FROM drupaldocker/php:7.2-cli-2.x
+FROM drupaldocker/php:7.4-cli-2.x
 
 # Default user uid for ubuntu users
 ARG UID=1000

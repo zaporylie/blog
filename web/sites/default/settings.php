@@ -51,6 +51,8 @@ $settings['file_scan_ignore_directories'] = [
 ];
 $settings['entity_update_batch_size'] = 50;
 $config_directories['sync'] = '../config/sync';
+// This is supported in 8.8, but required in 9.0
+$settings["config_sync_directory"] = '../config/sync';
 $settings['install_profile'] = 'minimal';
 
 /**

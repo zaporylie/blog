@@ -18,18 +18,17 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/auto_entitylabel": "^2.1@beta",
-        "drupal/core-recommended": "^8.9",
+        "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/core-composer-scaffold": "^9.4",
+        "drupal/core-recommended": "^9.4",
         "drupal/token": "^1.5",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^11",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.9",
-        "zaporylie/composer-drupal-optimizations": "^1.2"
+        "drupal/core-dev": "^9.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -37,7 +36,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "autoload": {
         "classmap": [
@@ -64,17 +69,37 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "vendor:npm-asset",
+                "vendor:bower-asset",
+                "harvesthq/chosen"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/{$name}": [
+                "type:drupal-drush"
+            ]
         },
         "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
+            "locations": {
+                "web-root": "web/"
+            },
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "file-mapping": {
+                "[web-root]/sites/development.services.yml": false
             }
         },
         "violinist": {

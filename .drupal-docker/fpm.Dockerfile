@@ -1,4 +1,4 @@
-FROM drupaldocker/php-dev:7.2-fpm-2.x
+FROM drupaldocker/php-dev:7.4-fpm-2.x
 
 # Create volume placeholders in order to ensure correct user/group for the volumes.
 RUN mkdir -p /var/www/html/drupal-files && chown www-data:www-data /var/www/html/drupal-files && chmod g+ws /var/www/html/drupal-files \

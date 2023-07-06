@@ -18,9 +18,9 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/core-recommended": "^8.9",
+        "drupal/core-composer-scaffold": "^8.9",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
@@ -37,7 +37,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4"
+        }
     },
     "autoload": {
         "classmap": [
@@ -75,6 +78,9 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            },
+            "locations": {
+                "web-root": "web/"
             }
         },
         "violinist": {

@@ -1,7 +1,7 @@
-status: '2'
+status: 2
 pattern: '[node:body]'
-php: 0
-escape: 1
+escape: true
 dependencies:
   config:
     - node.type.microblog
+php: 0

@@ -3,7 +3,7 @@ type: theme
 base theme: classy
 description: Very simple and clean blog theme.
 package: Custom
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 logo: logo.jpg
 libraries:
   - personal_blog/fonts

@@ -850,5 +850,5 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 $settings['entity_update_batch_size'] = 50;
-$config_directories['sync'] = '../config/sync';
+$settings["config_sync_directory"] = '../config/sync';
 $settings['install_profile'] = 'minimal';

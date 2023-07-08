@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.microblog
   module:
+    - file
     - media
     - node
     - system
@@ -18,6 +19,7 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'create microblog content'
+  - 'delete own files'
   - 'delete own microblog content'
   - 'edit own microblog content'
   - 'view media'

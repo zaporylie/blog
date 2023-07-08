@@ -17,3 +17,5 @@ regions:
   breadcrumb: 'Breadcrumb'
   content: 'Content'
   footer: 'Footer'
+dependencies:
+  - classy:classy

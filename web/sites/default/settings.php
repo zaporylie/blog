@@ -851,4 +851,3 @@ $settings['file_scan_ignore_directories'] = [
 ];
 $settings['entity_update_batch_size'] = 50;
 $settings["config_sync_directory"] = '../config/sync';
-$settings['install_profile'] = 'minimal';

@@ -11,6 +11,7 @@ global:
       css/components/header.css: {}
       css/components/menu.css: {}
       css/components/messages.css: {}
+      css/components/media.css: {}
       css/components/node.css: {}
       css/components/sidebar.css: {}
       css/components/table.css: {}

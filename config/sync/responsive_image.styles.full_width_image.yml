@@ -1,0 +1,39 @@
+uuid: 6050dbdb-ea7d-41a7-928d-d8686e211176
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+  theme:
+    - personal_blog
+id: full_width_image
+label: 'Full width image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: personal_blog.extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: personal_blog.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: personal_blog.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: personal_blog.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: personal_blog.extra_small
+    multiplier: 1x
+breakpoint_group: personal_blog
+fallback_image_style: medium

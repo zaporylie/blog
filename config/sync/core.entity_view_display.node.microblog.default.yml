@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.microblog.body
+    - field.field.node.microblog.field_media_attachment
     - node.type.microblog
   module:
     - text
@@ -20,9 +21,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_media_attachment:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden: {  }

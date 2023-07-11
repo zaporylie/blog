@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_form_mode.node.quick
     - field.field.node.microblog.body
+    - field.field.node.microblog.field_media_attachment
     - node.type.microblog
   module:
+    - media_library
     - text
 id: node.microblog.quick
 targetEntityType: node
@@ -22,6 +24,13 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_media_attachment:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

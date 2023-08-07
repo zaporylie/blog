@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+.layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  /*margin: 0px;  !* removes default style *!*/
+  /*display: flex;  !* enables flex content for its children *!*/
+  /*box-sizing: border-box;*/
+}
+
+/*.layout-container > .column {*/
+/*  height: 100%;  !* allows both columns to span the full height of the browser window *!*/
+/*  display: flex;*/
+/*  flex-direction: column;  !* stacks the left and right headers above the bottom content *!*/
+/*}*/
+
+#column-left {
+  flex-grow: 1;
+  background-color: #f3f7f1;
+  padding: 1em;
+  min-inline-size: 320px;
+  /*flex-shrink: 0;  !* makes sure that content is not cut off in a smaller browser window *!*/
+}
+#column-right {
+  flex-basis: 0;
+  flex-grow: 999;
+}
+
+.top-left {
+  flex-shink: 0;
+}
+
+.top-right {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.bottom {
+  flex-grow: 1;  /* ensures that the container will take up the full height of the parent container */
+  overflow-y: auto;  /* adds scroll to this container */
+}
+
+.layout-content {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  color: #93a58a;
+  font-size: 2em;
+}
+
+.block-system-branding-block .site-logo img {
+  width: 8em;
+  height: 8em;
+  border-radius: 8em;
+  border-width: .5em;
+  border-style: solid;
+  color: #93a58a;
+}
+.block-system-branding-block .site-name {
+  font-size: 2em;
+}
+.block-system-branding-block .site-slogan {
+  color: #999999;
+}

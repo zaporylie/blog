@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.microblog.body
     - field.field.node.microblog.field_media_attachment
+    - field.field.node.microblog.field_tags
     - node.type.microblog
   module:
     - text
@@ -32,4 +33,5 @@ content:
     weight: 1
     region: content
 hidden:
+  field_tags: true
   links: true

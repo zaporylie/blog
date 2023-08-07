@@ -1,0 +1,24 @@
+name: personal
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+logo: logo.jpg
+libraries:
+  - personal/base
+  - personal/fonts
+  - personal/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - personal/user
+  core/drupal.dropbutton:
+    - personal/dropbutton
+  core/drupal.dialog:
+    - personal/dialog
+  file/drupal.file:
+    - personal/file
+  core/drupal.progress:
+    - personal/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.1'

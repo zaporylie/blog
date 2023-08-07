@@ -1,0 +1,25 @@
+uuid: f2862a35-f1ec-49bf-8b61-3efb7069fe17
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - personal
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: personal_branding
+theme: personal
+region: header
+weight: -2
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

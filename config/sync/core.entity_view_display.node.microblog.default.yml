@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.microblog.body
     - field.field.node.microblog.field_media_attachment
+    - field.field.node.microblog.field_tags
     - node.type.microblog
   module:
     - text
@@ -35,4 +36,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_tags: true

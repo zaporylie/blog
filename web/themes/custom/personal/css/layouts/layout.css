@@ -21,7 +21,7 @@ html, body {
 
 #column-left {
   flex-grow: 1;
-  background-color: #f3f7f1;
+  background-color: #008080;
   padding: 1em;
   min-inline-size: 320px;
   /*flex-shrink: 0;  !* makes sure that content is not cut off in a smaller browser window *!*/
@@ -53,7 +53,7 @@ html, body {
 }
 
 .page-title {
-  color: #93a58a;
+  color: #00d9d9;
   font-size: 2em;
 }
 
@@ -63,11 +63,11 @@ html, body {
   border-radius: 8em;
   border-width: .5em;
   border-style: solid;
-  color: #93a58a;
+  color: #005a5a;
 }
 .block-system-branding-block .site-name {
   font-size: 2em;
 }
 .block-system-branding-block .site-slogan {
-  color: #999999;
+  color: #ffffff;
 }

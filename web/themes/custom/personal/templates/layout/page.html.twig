@@ -44,49 +44,38 @@
 #}
 <div class="layout-container">
 
-  <div id="column-left" class="column">
-    <div class="top-left">
-      <header role="banner">
-        {{ page.header }}
-      </header>
-    </div>
-    <div class="bottom">
-      {{ page.primary_menu }}
-      {{ page.secondary_menu }}
-      {% if page.sidebar_first %}
-        <aside class="layout-sidebar-first" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
-
-      {% if page.sidebar_second %}
-        <aside class="layout-sidebar-second" role="complementary">
-          {{ page.sidebar_second }}
-        </aside>
-      {% endif %}
+    <div id="page-header">
+      <div class="layout-content">
+        <header role="banner">
+          {{ page.header }}
+        </header>
+      </div>
+      <div class="bottom">
+        {{ page.primary_menu }}
+        {{ page.secondary_menu }}
+      </div>
     </div>
   </div>
-  <div id="column-right" class="column">
-    <div class="top-right">
-      {{ page.breadcrumb }}
-      {{ page.highlighted }}
-      {{ page.help }}
-    </div>
-    <div class="bottom">
-      <main role="main">
-        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  <div id="page-content" class="column">
+    {{ page.breadcrumb }}
+    {{ page.highlighted }}
+    {{ page.help }}
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-        <div class="layout-content">
-          {{ page.content }}
-        </div>{# /.layout-content #}
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
 
-      </main>
+    </main>
 
-      {% if page.footer %}
-        <footer role="contentinfo">
-          {{ page.footer }}
-        </footer>
-      {% endif %}
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+    <div class="monogram">
+      Monogram
     </div>
   </div>
 

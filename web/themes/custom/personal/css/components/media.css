@@ -1,2 +1,2 @@
-article.media .field--name-field-media-image {}
+article.media .field--name-field-media-image { margin: 0 -1em; }
 article.media .field--name-field-media-image picture img { max-width: 100%; height: 100%; }

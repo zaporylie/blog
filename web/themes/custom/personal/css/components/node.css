@@ -7,10 +7,6 @@
   background-color: #fff4f4;
 }
 
-article.node {
-  line-height: 2em;
-}
-
 article.node h2 .field--name-title {
   color: #999999;
   text-decoration: none;

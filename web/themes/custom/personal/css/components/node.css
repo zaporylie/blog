@@ -22,3 +22,12 @@ article.node .node__meta {
   font-size: .8em;
   color: #93a58a;
 }
+
+body.path-frontpage article.node {
+
+}
+
+article.node .node__content a {
+  text-decoration: underline;
+  color: teal;
+}

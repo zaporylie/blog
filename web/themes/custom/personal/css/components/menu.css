@@ -34,3 +34,8 @@ ul.menu {
 ul.menu a.is-active {
   color: #000;
 }
+
+.block.block-menu.menu--main ul li {
+  display: inline-block;
+  margin-right: 1em;
+}

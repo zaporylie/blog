@@ -1,0 +1,12 @@
+uuid: 8a939d54-a6a0-4eb6-b9d3-f15ee30aa4ae
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  image_src: /themes/custom/personal/images/social/social-fallback.png
+  title: '[current-page:title] | [site:name]'

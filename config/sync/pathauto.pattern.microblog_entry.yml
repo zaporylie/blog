@@ -1,0 +1,22 @@
+uuid: aeed43b9-0c8b-4fc5-929d-d1e1ac1e6436
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: microblog_entry
+label: 'Microblog entry'
+type: 'canonical_entities:node'
+pattern: 'microblog/[node:nid]'
+selection_criteria:
+  64f62413-ceab-4824-84ea-2d73696b07a8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 64f62413-ceab-4824-84ea-2d73696b07a8
+    context_mapping:
+      node: node
+    bundles:
+      microblog: microblog
+selection_logic: and
+weight: -5
+relationships: {  }

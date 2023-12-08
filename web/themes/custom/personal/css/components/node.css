@@ -15,7 +15,7 @@ article.node h2 .field--name-title {
 article.node .metadata {
   padding-bottom: 2em;
   margin-bottom: 2em;
-  border-bottom: 3px dotted #f3f7f1;
+  /*border-bottom: 3px dotted #f3f7f1;*/
 }
 
 article.node .node__meta {

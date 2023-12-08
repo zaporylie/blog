@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.full_html
     - node.type.microblog
   module:
     - file
+    - filter
     - media
     - node
     - system
@@ -22,5 +24,6 @@ permissions:
   - 'delete own files'
   - 'delete own microblog content'
   - 'edit own microblog content'
+  - 'use text format full_html'
   - 'view media'
   - 'view microblog revisions'

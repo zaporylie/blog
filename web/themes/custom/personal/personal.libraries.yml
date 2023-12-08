@@ -113,7 +113,3 @@ user:
     component:
       css/components/user.css:
         weight: -10
-fonts:
-  css:
-    theme:
-      '//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=latin-ext': { type: external, minified: true }

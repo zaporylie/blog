@@ -1,6 +1,9 @@
-status: 2
-pattern: '[node:body]'
+status: 1
+pattern: '[node:nid]'
 escape: true
+preserve_titles: false
+save: true
+chunk: 50
 dependencies:
   config:
     - node.type.microblog

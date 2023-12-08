@@ -8,5 +8,11 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
+  description: 'A seasoned professional with more than 15 years of experience building e-commerce platforms for merchants around the world. Reach out if you want help with E-Commerce or Drupal projects.'
   image_src: /themes/custom/personal/images/social/social-fallback.png
+  og_description: 'A seasoned professional with more than 15 years of experience building e-commerce platforms for merchants around the world. Reach out if you want help with E-Commerce or Drupal projects.'
+  og_image: /themes/custom/personal/images/social/social-fallback.png
+  og_site_name: '[current-page:title] | [site:name]'
+  og_title: '[current-page:title] | [site:name]'
   title: '[current-page:title] | [site:name]'
+  twitter_cards_type: summary

@@ -1,0 +1,10 @@
+uuid: b5eec3e4-178b-4906-ab75-7c0b6a34dcfa
+langcode: en
+status: true
+dependencies: {  }
+id: node__microblog
+label: 'Content: Microblog'
+tags:
+  og_description: '[node:body]'
+  og_image: '[node:field_media_attachment:0:entity:field_media_image:entity:url]'
+  og_image_url: /themes/custom/personal/images/social/social-fallback.png

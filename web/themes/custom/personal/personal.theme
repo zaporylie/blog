@@ -19,11 +19,3 @@ function personal_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
-
-function personal_preprocess_page_title(&$variables) {
-  // Load the node entity from current route
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    // Set the page title
-    $variables['title'] = new \Drupal\Component\Render\FormattableMarkup('#@nid', ['@nid' => $node->id()]);
-  }
-}

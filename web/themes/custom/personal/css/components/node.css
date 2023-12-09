@@ -2,6 +2,17 @@
  * @file
  * Visual styles for nodes.
  */
+.view-microblog .views-row {
+  border-bottom: 2px dotted #00808054;
+  padding: 1em 0;
+}
+.view-microblog .views-row:last-child {
+  border-bottom: 0;
+}
+
+article.node {
+  font-family: "Scope One", Georgia, serif;
+}
 
 .node--unpublished {
   background-color: #fff4f4;
@@ -13,14 +24,13 @@ article.node h2 .field--name-title {
 }
 
 article.node .metadata {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   /*border-bottom: 3px dotted #f3f7f1;*/
 }
 
 article.node .node__meta {
   font-size: .8em;
-  color: #93a58a;
+  font-weight: bold;
 }
 
 body.path-frontpage article.node {

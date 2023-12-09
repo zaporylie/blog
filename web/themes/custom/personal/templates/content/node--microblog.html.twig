@@ -91,7 +91,7 @@
       {% if display_submitted %}
         <footer class="node__meta">
           <div{{ author_attributes.addClass('node__submitted') }}>
-            <a href="{{ url }}">#{{ node.id }} </a> | {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %} {{ metadata }}
+            <a href="{{ url }}">#{{ node.id }} </a> | {% trans %}Submitted on {{ date }}{% endtrans %} {{ metadata }}
           </div>
         </footer>
       {% endif %}

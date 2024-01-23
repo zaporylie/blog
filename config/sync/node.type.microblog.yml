@@ -1,7 +1,14 @@
 uuid: 7b5e630a-7a6e-44ae-9d96-5a25bd223054
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 name: Microblog
 type: microblog
 description: 'Short notes, twitter style'

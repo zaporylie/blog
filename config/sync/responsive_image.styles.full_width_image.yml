@@ -6,34 +6,34 @@ dependencies:
     - image.style.large
     - image.style.medium
   theme:
-    - personal_blog
+    - personal
 id: full_width_image
 label: 'Full width image'
 image_style_mappings:
   -
     image_mapping_type: image_style
     image_mapping: large
-    breakpoint_id: personal_blog.extra_large
+    breakpoint_id: personal.extra_large
     multiplier: 1x
   -
     image_mapping_type: image_style
     image_mapping: large
-    breakpoint_id: personal_blog.large
+    breakpoint_id: personal.large
     multiplier: 1x
   -
     image_mapping_type: image_style
     image_mapping: large
-    breakpoint_id: personal_blog.medium
+    breakpoint_id: personal.medium
     multiplier: 1x
   -
     image_mapping_type: image_style
     image_mapping: medium
-    breakpoint_id: personal_blog.small
+    breakpoint_id: personal.small
     multiplier: 1x
   -
     image_mapping_type: image_style
     image_mapping: medium
-    breakpoint_id: personal_blog.extra_small
+    breakpoint_id: personal.extra_small
     multiplier: 1x
-breakpoint_group: personal_blog
+breakpoint_group: personal
 fallback_image_style: medium

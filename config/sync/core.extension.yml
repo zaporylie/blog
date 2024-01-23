@@ -43,7 +43,6 @@ module:
 theme:
   stable: 0
   classy: 0
-  personal_blog: 0
   claro: 0
   stable9: 0
   personal: 0

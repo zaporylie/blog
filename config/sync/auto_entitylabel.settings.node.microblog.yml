@@ -7,4 +7,5 @@ chunk: 50
 dependencies:
   config:
     - node.type.microblog
+new_content_behavior: 1
 php: 0

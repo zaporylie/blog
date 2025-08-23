@@ -51,6 +51,7 @@ article.node code {
   padding: .2em .5em;
   display: inline-block;
   font-family: monospace;
+  text-wrap: auto;
 }
 
 article.node pre > code {

@@ -44,7 +44,6 @@ module:
   minimal: 1000
 theme:
   stable: 0
-  classy: 0
   claro: 0
   stable9: 0
   personal: 0

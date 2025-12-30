@@ -1,0 +1,22 @@
+uuid: e29a081f-00b4-4238-9d09-b0b958d71a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.microblog
+id: node.microblog.promote
+field_name: promote
+entity_type: node
+bundle: microblog
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

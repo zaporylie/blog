@@ -6,6 +6,6 @@ dependencies:
     - node
 id: node.quick
 label: quick
-description: ''
+description: null
 targetEntityType: node
 cache: true
